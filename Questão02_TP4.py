@@ -8,8 +8,9 @@
 def lin():
     print("==" * 40 )
 
+
 def boas_vindas():
-    print("Olá, seja bem-vindo ao programa que informa se a primeira letra digitada é vogal ou consoante!")
+    print("Olá, seja bem-vindo ao programa que informa se a letra digitada é vogal ou consoante!")
 
 lin()
 
@@ -27,7 +28,7 @@ def letras():
         return 1
 
 
-def validar():
+def validar(letra):
     vogal = 0
     consoante = 1
     if letra == vogal:
@@ -37,12 +38,9 @@ def validar():
 
 
 letra = letras()
-validar()
+validar(letra)
 lin()
 print("FIM!")
-
-
-
 
 
 
