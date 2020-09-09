@@ -5,8 +5,27 @@
 #Cat 2: 10% <= lucro <= 20%
 #Cat 3: lucro > 20%
 
-def get_data():
 
+def lin():
+    print("==" * 40)
+
+
+def boas_vindas():
+    print("Olá, bem-vindo ao programa que calcula o lucro de 10 (dez) produtos.")
+    print("""Os lucros calculados serão inseridos em:
+Cat: 1
+Cat: 2
+Cat: 3""")
+
+
+lin()
+
+boas_vindas()
+
+lin()
+
+
+def get_data():
     valor_compra = float(input(f"Digite o valor de compra do produto: R$ "))
     valor_venda = float(input(f"Digite o valor de venda do produto: R$ "))
     lucro = ((valor_venda - valor_compra) / valor_venda) * 100
@@ -31,10 +50,8 @@ quantidade_valor_1 = len(list_1)
 quantidade_valor_2 = len(list_2)
 quantidade_valor_3 = len(list_3)
 
+lin()
 print(f"Na Cat 1 há {len(list_1)} produto(s).")
-print(f"Na Cat 2 há {len(list_2)} produto(s).")
-print(f"Na Cat 3 há {len(list_3)} produtos(s).")
-
 
 
 
