@@ -5,8 +5,20 @@
 #Para isso desenvolva uma função que receba a letra como entrada e retorne 1,
 #caso seja uma consoante e 0, caso contrário.
 
+def lin():
+    print("==" * 40 )
+
+def boas_vindas():
+    print("Olá, seja bem-vindo ao programa que informa se a primeira letra digitada é vogal ou consoante!")
+
+lin()
+
+boas_vindas()
+
+lin()
+
 def letras():
-    letra = str(input("Digite uma letra qualquer: ")).upper().strip()
+    letra = str(input("Digite apenas 01 (uma) letra qualquer: ")).upper().strip()
     print(f"Você digitou a letra {letra}.")
     vogal = "AEIOU"
     if letra in vogal:
@@ -23,10 +35,11 @@ def validar():
     elif letra == consoante:
         print(f"A letra digitada é uma consoante.")
 
+
 letra = letras()
 validar()
-
-
+lin()
+print("FIM!")
 
 
 
