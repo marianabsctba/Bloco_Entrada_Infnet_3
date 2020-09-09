@@ -1,4 +1,3 @@
-#Questão 01
 #Desenvolva um código que leia o valor de compra para o estabelecimento
 # e o preço de venda de 10 produtos diferentes
 # e ao final imprima quantos produtos se enquadram em cada categoria abaixo:
@@ -53,6 +52,13 @@ quantidade_valor_3 = len(list_3)
 
 lin()
 print(f"Na Cat 1 há {len(list_1)} produto(s).")
+lin()
+print(f"Na Cat 2 há {len(list_2)} produto(s).")
+lin()
+print(f"Na Cat 3 há {len(list_3)} produtos(s).")
+lin()
+print("FIM!")
+lin()
 
 
 
