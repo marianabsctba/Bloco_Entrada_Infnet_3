@@ -1,3 +1,4 @@
+#Questão 01
 #Desenvolva um código que leia o valor de compra para o estabelecimento
 # e o preço de venda de 10 produtos diferentes
 # e ao final imprima quantos produtos se enquadram em cada categoria abaixo:
