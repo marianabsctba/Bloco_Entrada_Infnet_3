@@ -9,6 +9,9 @@
 # Para que o código possa ser elaborado corretamente, crie um arquivo
 # contendo o nome e saldo da conta bancária de 15 clientes e defina alguns saldos negativos.
 
+def lin():
+    print("--" * 30)
+
 def listar_contatos(arquivo_agenda):
     agenda = open(arquivo_agenda, 'r')
     contatos = agenda.read()
@@ -30,21 +33,28 @@ def cadastrar_contato(nome, saldo, arquivo_agenda):
         agenda.close()
 
 
-
 def boas_vindas():
   print("Agenda de clientes. Seja bem-vindo!")
 
 
 
+lin()
+
 boas_vindas()
 
+lin()
+
 arquivo_agenda = input("Informe o nome do arquivo de clientes a ser criado: ")
+
+lin()
 
 for c in range(0, 2):
     nome = input(f"Nome do cliente: ").upper().strip()
     saldo = float(input("Saldo do cliente: R$ "))
     cadastrar_contato(nome, saldo, arquivo_agenda)
+    lin()
     print(f"\nCliente {nome} cadastrado com sucesso.")
+    lin()
 
 
 print("**********************************\n")
