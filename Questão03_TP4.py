@@ -3,11 +3,7 @@
 #Desenvolva um código que leia um arquivo contendo o nome e saldo da conta bancária
 # de 15 clientes diferentes e ao final imprima na tela o nome
 # e saldo da conta bancária de todos os clientes que têm saldo negativo na conta
-# incluindo a seguinte mensagem: O cliente tem saldo negativo - entrar em contato,
-# e além disso grave um arquivo contendo o nome e saldo da conta bancária
-# de todos esses clientes que têm saldo negativo na conta.
-# Para que o código possa ser elaborado corretamente, crie um arquivo
-# contendo o nome e saldo da conta bancária de 15 clientes e defina alguns saldos negativos.
+# incluindo a seguinte mensagem: O cliente tem saldo negativo - entrar em contato.
 
 def lin():
     print("--" * 30)
