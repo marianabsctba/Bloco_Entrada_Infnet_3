@@ -1,6 +1,8 @@
 #Questão 03 do TP4
 
-#eu modifique um pouco essa questão porque queria estudar dicionários e pandas, bem como porque pensei ser mais fácil para corrigir. Obrigada.
+#eu modifique um pouco essa questão porque no TP4 o enunciado já mencionada o VisuAlg. 
+#Assim,como eu queria estudar dicionários e pandas, bem como porque pensei ser mais fácil para corrigir. 
+#Sei abrir arquivo, escrever, modificar e analisar, ex: "arq = open("txt.csv", "r") ou "a", "arq.write" etc. Obrigada!
 
 
 import pandas as pd
