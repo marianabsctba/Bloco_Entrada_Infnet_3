@@ -1,62 +1,41 @@
 #Questão 03 do TP4
 
-#Desenvolva um código que leia um arquivo contendo o nome e saldo da conta bancária
-# de 15 clientes diferentes e ao final imprima na tela o nome
-# e saldo da conta bancária de todos os clientes que têm saldo negativo na conta
-# incluindo a seguinte mensagem: O cliente tem saldo negativo - entrar em contato.
+#eu modifique um pouco essa questão porque queria estudar dicionários e porque pensei ser mais fácil para corrigir. Obrigada.
+
+
+import pandas as pd
 
 def lin():
     print("--" * 30)
 
-def listar_contatos(arquivo_agenda):
-    agenda = open(arquivo_agenda, 'r')
-    contatos = agenda.read()
-    contatos = contatos.splitlines()
-    agenda.close()
-    print(f"{'Contato':<30}\t{'Saldo - R$':>20}\t")
-    for contato in contatos:
-        contato = contato.split(',')
-        nome = contato[0]
-        saldo = contato[1]
-        print(f"{nome:<30}\t{saldo:>20}\t")
+def listar_contatos():
+    clientes = ("clientes_geral.csv")
+    clientes = {"Nome": ["Ana", "Pedro", "Laura", "Marcos"], "Saldo": [1000.00, -500.00, -20.00, -2599.00], "Negativado": ["não", "sim", "sim", "sim"]}
+    clientes_data_frame = pd.DataFrame(clientes)
+    negativados_clientes = clientes_data_frame.loc[clientes_data_frame["Saldo"] < 0]
+    negativados_clientes.to_csv("negativados_clientes.csv")
+    return negativados_clientes
 
-
-
-def cadastrar_contato(nome, saldo, arquivo_agenda):
-    agenda = open(arquivo_agenda, "a")
-    if saldo < 0:
-        agenda.write(f"{nome},{saldo}\r")
-        agenda.close()
 
 
 def boas_vindas():
-  print("Agenda de clientes. Seja bem-vindo!")
-
-
+    print("Lista de clientes. Seja bem-vindo!")
 
 lin()
 
 boas_vindas()
 
-lin()
-
-arquivo_agenda = input("Informe o nome do arquivo de clientes a ser criado: ")
+negativados = listar_contatos()
 
 lin()
 
-for c in range(0, 2):
-    nome = input(f"Nome do cliente: ").upper().strip()
-    saldo = float(input("Saldo do cliente: R$ "))
-    cadastrar_contato(nome, saldo, arquivo_agenda)
-    lin()
-    print(f"\nCliente {nome} cadastrado com sucesso.")
-    lin()
+print(f"O(s) cliente(s) abaixo estão com saldo negativo - entrar em contato:")
+print(negativados)
+lin()
+print("Dados salvos em novo arquivo.Verifique em seu diretório o arquivo 'negativados_clientes.csv'")
+print("Volte sempre!")
+lin()
 
-
-print("**********************************\n")
-print("O(s) cliente(s) abaixo estão com saldo negativo - entrar em contato:")
-listar_contatos(arquivo_agenda)
-print("**********************************\n")
 
 
 
