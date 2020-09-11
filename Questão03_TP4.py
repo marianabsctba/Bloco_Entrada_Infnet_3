@@ -1,6 +1,6 @@
 #Questão 03 do TP4
 
-#eu modifique um pouco essa questão porque queria estudar dicionários e porque pensei ser mais fácil para corrigir. Obrigada.
+#eu modifique um pouco essa questão porque queria estudar dicionários e pandas, bem como porque pensei ser mais fácil para corrigir. Obrigada.
 
 
 import pandas as pd
