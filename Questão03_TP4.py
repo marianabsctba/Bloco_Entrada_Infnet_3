@@ -1,3 +1,6 @@
+#Questão 03
+#modifiquei o exercício para usar listas. Não fiz 15 clientes para facilitar a correção. Entretanto, funciona com 15 tb.
+
 import pandas as pd
 
 def lin():
